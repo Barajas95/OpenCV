@@ -1,2 +1,2 @@
 # OpenCV
-Programas en python utilizando al libreria OpenCV.
+Programas en Python utilizando al librería OpenCV.
