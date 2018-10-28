@@ -1,3 +1,4 @@
+#La libreria 'helpers.py' se encuentra dentro de este mismo proyecto con las instrucciones para que se pueda compilar.
 from helpers import pyramid
 from helpers import sliding_window
 import cv2
