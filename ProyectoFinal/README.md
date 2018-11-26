@@ -42,7 +42,7 @@ path2 = 'C:/Users/Barajas/Downloads/9no Semestre/Computer Vision/ProyectoFinal' 
 ## Navegación a través del programa principal. ⌨️
 Una vez ejecutado el archivo "final.py" se pueden presentar dos situaciones: <br>
 1.- Si el programa no puede encontrar la cámara principal de la computadora, el archivo que será analizado como prueba del proyecto será "prueba02.jpg" <br>
-2.- Si la cámara es detectada correctamente, se abrirá una ventana con los frames de la cámara. Para tomar una fotografía se debe presionar la tecla "Espacio" e inmediatamente se tomará la captura. Se le permitirá al usuario seleccionar entre la fotografía tomada (volviendo a presionar la tecla "Espacio" antes de 5 segundos) u la opción de tomar otra (presionar cualquier tecla a excepción de Espacio" o esperar 5 segundos). <br>
+2.- Si la cámara es detectada correctamente, se abrirá una ventana con los frames de la cámara. Para tomar una fotografía se debe presionar la tecla _Espacio_ e inmediatamente se tomará la captura. Se le permitirá al usuario seleccionar entre la fotografía tomada (volviendo a presionar la tecla _Espacio_ antes de 5 segundos) o la opción de tomar otra fotografía (presionar cualquier tecla a excepción de _Espacio_ o esperar 5 segundos). <br>
 
 ## Versiones 📌
 -- Version 1 (Proyecto inicial) <br>
