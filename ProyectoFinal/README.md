@@ -49,13 +49,10 @@ Una vez ejecutado el archivo "final.py" se pueden presentar dos situaciones: <br
 -- <br>
 
 ## Autores ✒️
-* **Rubén Barajas Curiel** - *Desarrollo del software, documentación y soporte*
-* **Víctor Daniel Green Silva** - *Desarrollo del software*
+* **Rubén Barajas Curiel** - *Desarrollo del software, documentación y soporte* - [Barajas95](https://github.com/Barajas95)
+* **Víctor Daniel Green Silva** - *Desarrollo del software* - [VictorGreen](https://github.com/VictorGreen)
 * **Ismael Lizárraga González** - *Desarrollo del software*
 
 ## Licencia 📄
-Este proyecto está bajo la Licencia de código libre. El software puede ser utilizado o alterado sin consecuencia alguna.
+Este proyecto está bajo la licencia de código libre. El software puede ser utilizado o alterado bajo su consentimiento.
 
-## Expresiones de Gratitud 🎁
-* Comenta sobre el proyecto para mejorarlo 📢
-* Da las gracias 🤓.
