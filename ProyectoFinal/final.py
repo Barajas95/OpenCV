@@ -7,12 +7,13 @@ import os
 import glob
 import sys
 
+path = 'C:/Users/Barajas/Downloads/9no Semestre/Computer Vision/Proyecto Final/results/'
+path2 = 'C:/Users/Barajas/Downloads/9no Semestre/Computer Vision/Proyecto Final'
+
 #Azules:
 azul_bajos = np.array([100,65,75], dtype=np.uint8)
 azul_altos = np.array([130, 255, 255], dtype=np.uint8)
 
-path = 'C:/Users/Barajas/Downloads/ProyectoFinal/Vamos/results/'
-path2 = 'C:/Users/Barajas/Downloads/ProyectoFinal/Vamos/'
 contador=1
 kernel = np.ones((3,3),np.uint8)
 
@@ -42,6 +43,7 @@ while(1):
 			if teclado == 32:
 				print("Fotografia seleccionada correctamente")
 				cv2.imwrite('Foto.png',frame)
+				image = Image.open('Foto.png')
 				cap.release()
 				cv2.destroyAllWindows()
 				break
@@ -51,21 +53,23 @@ while(1):
 	else:
 		print("Error al acceder a la camara")
 		cap.release()
-		sys.exit()
+		image = Image.open('prueba02.jpg')
+		break
 
 print("ARRANCANDO PROGRAMA...")
 #Contraste
-image = Image.open('Foto.png')
 contrast = ImageEnhance.Contrast(image)
 image = contrast.enhance(3)
 image = np.asarray(image)
 r, g, b = cv2.split(image)
 contrast = cv2.merge([b, g, r])
 image = cv2.cvtColor(contrast, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Contraste', image)
 
 #Filtro
 img_filter1 = cv2.fastNlMeansDenoising(image, None, 9, 13)
 img_filter2 = cv2.bilateralFilter(img_filter1,9,75,75)
+cv2.imshow('Filtro', img_filter2)
 
 #Binarizacion
 adaptativeThresholdGaussian = cv2.adaptiveThreshold(img_filter2,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY,11,2)
@@ -76,6 +80,7 @@ adaptativeThresholdGaussian = cv2.adaptiveThreshold(img_filter2,255,cv2.ADAPTIVE
 
 #Guardar imagen binaria
 cv2.imwrite('Filtrada.png', adaptativeThresholdGaussian)
+cv2.imshow('Binarizada', adaptativeThresholdGaussian)
 
 #Dimensiones de la imagen y el marco
 image = cv2.imread('Filtrada.png')
@@ -158,7 +163,6 @@ for (startX, startY, endX, endY) in boxes:
 
 print("PROCESANDO PALABRAS...")
 #Proccess words.
-image = cv2.imread('Filtrada.png')
 hsv = cv2.cvtColor(orig, cv2.COLOR_BGR2HSV)
 mascara_azul = cv2.inRange(hsv, azul_bajos, azul_altos)
 hsv2,ctrs, hier = cv2.findContours(mascara_azul, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -181,7 +185,7 @@ for i, ctr in enumerate(ctrs):
 	contador = contador+1
 
 #Output
-cv2.imshow('Detector', orig)
+cv2.imshow('Detector EAST', orig)
 cv2.imwrite('Detector.png', orig)
 
 #Close program (ESC)
