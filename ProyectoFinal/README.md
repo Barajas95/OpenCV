@@ -40,3 +40,11 @@ path2 = 'C:/Users/Barajas/Downloads/9no Semestre/Computer Vision/ProyectoFinal' 
 Ejecutar el archivo "final.py" <br>
 
 ## Navegación a través del programa principal. ⌨️
+Una vez ejecutado el archivo "final.py" se pueden presentar dos situaciones: <br>
+1.- Si el programa no puede encontrar la camara principal de la computadora, el archivo que será analizado como prueba del proyecto será "prueba03.jpg" <br>
+2.- Si la camara es detectada correctamente, se abrirá una ventana con los frames de la camara. Para tomar una fotografía se debe presionar la tecla "Espacio" e inmediatamente se tomará la captura. Se le permitirá al usuario seleccionar entre la fotografía tomada (volviendo a presionar la tecla "Espacio" antes de 5 segundos) u la opción de tomar otra (presionar cualquier tecla a excepcion de Espacio" o esperar 5 segundos). <br>
+
+## Autores ✒️
+* **Rubén Barajas Curiel** - *Trabajo Inicial*
+* **Victor Daniel Green Silva** - *Documentación y soporte*
+* **Ismael Lizarraga González** - *Testing y apoyo*
