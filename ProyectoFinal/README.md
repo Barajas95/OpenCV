@@ -37,6 +37,7 @@ import sys
        |--- Ignore.txt
     |--- east_detection.pb
     |--- final.py
+    |--- ProyectoFinal.pdf
     |--- prueba01.jpg
     |--- prueba02.jpg
     |--- prueba03.jpg
