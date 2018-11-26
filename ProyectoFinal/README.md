@@ -24,11 +24,13 @@ import sys
 |
 |--- ProyectoFinal
     |--- results
+       |--- Ignore.txt
     |--- east_detection.pb
     |--- final.py
     |--- prueba01.jpg
     |--- prueba02.jpg
     |--- prueba03.jpg
+    |--- README.md
 ```
 * El archivo llamado "east_detection.pb" puede ser descargado de https://drive.google.com/file/d/1Slsqq6MXYMuCHe3sqkxtabz_Us-P909n/view?usp=sharing <br>
 
