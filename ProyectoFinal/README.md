@@ -19,6 +19,16 @@ import os
 import glob
 import sys
 ```
+```Consola
+> pip install opencv-python
+> pip install opencv-contrib-pytho
+> pip install opencv-contrib-python-headless
+> pip install numpy
+> pip install pytesseract
+> pip install pillow
+> pip install imutils
+```
+
 * Ya que se tienen las librerías instaladas correctamente, el directorio del proyecto debe ser el siguiente: <br>
 ```Consola
 |
