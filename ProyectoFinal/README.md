@@ -1,10 +1,10 @@
 # Instrucciones para ejecutar el proyecto correctamente.
-*La parte realmente importante para poder ejecutar el proyecto es tener instaladas las versiones de Python 2.7.9 y OpenCV 3.4.3*<br>
+*La parte realmente importante para poder ejecutar el proyecto es tener instaladas las versiones de Python 2.7.9 y OpenCV 3.4.3. Esto se puede comprobar con el CMD de Windows*<br>
 ```Consola
-Python --version
-Python
-import cv2
-cv2.__version__
+> Python --version
+> Python
+>>> import cv2
+>>> cv2.__version__
 ```
 *De la misma manera, se deben tener instaladas las siguientes librerias para que al momento de importarlas no generen error*<br>
 ```Python
